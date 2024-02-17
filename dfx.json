@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "motoko_fless_backend": {
+      "main": "src/motoko_fless_backend/main.mo",
+      "type": "motoko"
+    },
+    "motoko_fless_frontend": {
+      "dependencies": [
+        "motoko_fless_backend"
+      ],
+      "source": [
+        "src/motoko_fless_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
